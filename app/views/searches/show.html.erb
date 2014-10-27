@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @search.colour %>
+</p>
+
+<p>
+  <strong>Noun:</strong>
+  <%= @search.noun %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @search.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @search.time %>
+</p>
+
+<p>
+  <strong>Responsetime:</strong>
+  <%= @search.responsetime %>
+</p>
+
+<%= link_to 'Edit', edit_search_path(@search) %> |
+<%= link_to 'Back', searches_path %>
