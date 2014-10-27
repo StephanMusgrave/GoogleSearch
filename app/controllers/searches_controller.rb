@@ -1,8 +1,7 @@
+
 class SearchesController < ApplicationController
   before_action :set_search, only: [:show, :edit, :update, :destroy]
-  @nouns =['man', 'mountain', 'state', 'ocean', 'country', 'building', 
-           'cat', 'airline', 'wealth', 'happiness', 'pride', 'fear', 
-           'religion', 'bird', 'book', 'phone', 'rice', 'snow', 'water']
+  
 
   # GET /searches
   # GET /searches.json
@@ -18,7 +17,13 @@ class SearchesController < ApplicationController
   # GET /searches/new
   def new
     @search = Search.new
-    @noun = @nouns.sample
+    @nouns =['man', 'mountain', 'state', 'ocean', 'country', 'building', 
+           'cat', 'airline', 'wealth', 'happiness', 'pride', 'fear', 
+           'religion', 'bird', 'book', 'phone', 'rice', 'snow', 'water']
+    
+    @search.noun = @nouns.sample
+    @search.date = Date.today.to_s
+    @search.time = Time.now.strftime("%H"":""%M")
   end
 
   # GET /searches/1/edit

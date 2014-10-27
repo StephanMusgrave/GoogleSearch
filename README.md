@@ -1,14 +1,15 @@
 #Google Search
 A technical test to develop a system to search google images based on a user selecting a coloured square.
 
-Development in progress - not yet completed
+## Development in progress - not yet completed
 
 Remaining features:
 - coloured boxes
-- google search API or equivalent
-- date conversion to string
-- time conversion to string
+- google search API or equivalent for colour + noun ie "Red" + "Mountain"
+- multiple url's - separate table
+- figaro to protect secret AP key(s)
 - bootstrap formating
+- unit tests (rspec)
 - navbar
 
 ## Developed by
@@ -20,7 +21,6 @@ Remaining features:
 |Ruby 2.1.2                |Main programming language       |
 |Ruby on Rails 4.1.1       |Model View Controller Framework |
 |Heroku                    |Deployment: [App on Heroku]     |
-|Rspec                     |Test Driven Development - unit testing  |
 |Apple Mac and OS X 10.9.4 |Hardware                         |
 
 ## How to run the program:
